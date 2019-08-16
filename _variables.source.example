@@ -1,5 +1,17 @@
+# Path to the helm-chart, change this if you have forked the standard helm 
+# chart.
 CHART_PATH="reload/os2display"  
+
+# If set to "os2display", eg. the k8s namespace for the test-environment will
+# be "os2display-test"
 ENVIRONMENT_PREFIX="os2display"
+
+# What to put in front of the numeric release to get the image-tag.
 RELEASE_TAG_PREFIX="reload-build"
+
+# Repository that holds the release images.
 RELEASE_IMAGE_PATH="reload"
+
+# if set to eg. os2display.reload.dk the url for the admin-backend for the
+# environment "test" will be "test.admin.os2display.reload.dk"
 BASE_URL="os2display.reload.dk"
