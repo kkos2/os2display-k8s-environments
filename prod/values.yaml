@@ -1,0 +1,61 @@
+# Docker image configuration
+images:
+  adminRelease:
+    image: eu.gcr.io/os2display-kff/admin-release
+    tag: kk-develop-2924
+  adminPhp:
+    image: reload/os2display-admin-php
+    tag: reload-2.1.0
+  adminNginx:
+    image: reload/os2display-admin-nginx
+    tag: reload-0.1.0
+  adminDb:
+    image: mariadb
+    tag: 10.3
+  adminDbBackup:
+    image: reload/os2display-admin-db-backup
+    tag: 10.3-reload-1.0.0
+  screen:
+    image: reload/os2display-screen
+    tag: 5.0.3-reload-0.1.1
+  search:
+    image: reload/os2display-search
+    tag: 2.1.10-docker-compatibility-2-reload-0.1.0
+  middleware:
+    image: reload/os2display-middleware
+    tag: 5.0.2-console-json-logging-2-reload-0.1.0
+  elasticsearch:
+    image: reload/os2display-elasticsearch
+    tag: 1.7.1-reload-0.1.0
+  redis:
+    image: reload/os2display-redis
+    tag: 4.0.9-reload-0.1.0
+
+# Application configuration
+os2display:
+  general:
+    environmentName: prod
+
+  admin:
+    publicDomain: "prod.admin.kkos2display.dk"
+    publicUrl: "https://prod.admin.kkos2display.dk"
+    mailerFromEmail: "admin-prod@example.com"
+    mailerFromName: "OS2Display prod Admin"
+
+  screen:
+    publicDomain: "prod.screen.kkos2display.dk"
+    publicUrl: "https://prod.screen.kkos2display.dk"
+
+  search:
+    publicDomain: "prod.search.kkos2display.dk"
+    publicUrl: "https://prod.search.kkos2display.dk"
+
+  adminDb:
+    backup:
+      enabled: false
+      # Type is currently not used as we only support google storage for now.
+      destinationType: "GoogleStorage"
+      # See tools/configure-db-backup.sh in reload/os2display-k8s
+      destinationUrl: "gs://db-backup-os2display-kff-os2display-prod"
+      # Daily at 04:02.
+      schedule: "2 4 * * *"

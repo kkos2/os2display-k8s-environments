@@ -8,6 +8,7 @@ cd "${SCRIPT_DIR}"
 
 if [[ $# -lt 2 ]] ; then
     echo "Syntax: $0 <environment> <initial-admin-release-number>"
+    echo "eg. $0 production 1234"
     exit 1
 fi
 

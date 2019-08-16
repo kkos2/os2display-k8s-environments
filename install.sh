@@ -19,6 +19,7 @@ SECRETS_PATH="${ENV_STATE_DIR}/secrets.yaml"
 
 if [[ ! -f "${VALUES_PATH}" ]] ; then
     echo "Missing values-file ${VALUES_PATH}"
+    exit 1
 fi
 
 if ! [ -x "$(command -v helm)" ]; then

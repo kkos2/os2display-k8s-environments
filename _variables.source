@@ -1,0 +1,5 @@
+CHART_PATH="reload/os2display"  
+ENVIRONMENT_PREFIX="os2display"
+RELEASE_TAG_PREFIX="kk-develop"
+RELEASE_IMAGE_PATH="eu.gcr.io/os2display-kff/admin-release"
+BASE_URL="kkos2display.dk"
