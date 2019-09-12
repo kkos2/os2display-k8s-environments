@@ -1,6 +1,6 @@
 # Path to the helm-chart, change this if you have forked the standard helm 
 # chart.
-CHART_PATH="reload/os2display"  
+CHART_PATH="reload-os2display/os2display"  
 
 # If set to "os2display", eg. the k8s namespace for the test-environment will
 # be "os2display-test"
