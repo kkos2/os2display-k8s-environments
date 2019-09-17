@@ -2,10 +2,10 @@
 images:
   adminRelease:
     image: eu.gcr.io/os2display-kff/admin-release
-    tag: kk-develop-2924
+    tag: kk-master-2930
   adminPhp:
     image: reload/os2display-admin-php
-    tag: reload-2.1.0
+    tag: reload-2.3.0
   adminNginx:
     image: reload/os2display-admin-nginx
     tag: reload-0.1.0
@@ -37,18 +37,18 @@ os2display:
     environmentName: prod
 
   admin:
-    publicDomain: "prod.admin.kkos2display.dk"
-    publicUrl: "https://prod.admin.kkos2display.dk"
+    publicDomain: "admin.kkos2display.dk"
+    publicUrl: "https://admin.kkos2display.dk"
     mailerFromEmail: "admin-prod@example.com"
     mailerFromName: "OS2Display prod Admin"
 
   screen:
-    publicDomain: "prod.screen.kkos2display.dk"
-    publicUrl: "https://prod.screen.kkos2display.dk"
+    publicDomain: "screen.kkos2display.dk"
+    publicUrl: "https://screen.kkos2display.dk"
 
   search:
-    publicDomain: "prod.search.kkos2display.dk"
-    publicUrl: "https://prod.search.kkos2display.dk"
+    publicDomain: "search.kkos2display.dk"
+    publicUrl: "https://search.kkos2display.dk"
 
   adminDb:
     backup:
