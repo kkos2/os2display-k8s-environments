@@ -2,7 +2,7 @@
 images:
   adminRelease:
     image: eu.gcr.io/os2display-kff/admin-release
-    tag: feature_OSD-68-title-margin-2933
+    tag: feature_OSD-68-title-margin-2934
   adminPhp:
     image: reload/os2display-admin-php
     tag: reload-2.3.0
