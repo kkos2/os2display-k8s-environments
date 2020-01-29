@@ -2,7 +2,7 @@
 images:
   adminRelease:
     image: eu.gcr.io/os2display-kff/admin-release
-    tag: kk-develop-2966
+    tag: kk-master-2971
   adminPhp:
     image: reload/os2display-admin-php
     tag: reload-2.3.0
