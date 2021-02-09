@@ -2,7 +2,7 @@
 images:
   adminRelease:
     image: eu.gcr.io/os2display-kff/admin-release
-    tag: kk-master-2998
+    tag: kk-master-3007
   adminPhp:
     image: reload/os2display-admin-php
     tag: reload-2.3.0
@@ -41,6 +41,10 @@ os2display:
     publicUrl: "https://stage.admin.kkos2display.dk"
     mailerFromEmail: "admin-stage@example.com"
     mailerFromName: "OS2Display stage Admin"
+    mailerHost: "smtp.sendgrid.net"
+    mailerPassword: "mtjzqKzHDgzGF24jymTrq"
+    mailerPort: "587"
+    mailerUser: "reloaddk"
 
   screen:
     publicDomain: "stage.screen.kkos2display.dk"

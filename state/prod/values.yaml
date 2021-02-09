@@ -2,7 +2,7 @@
 images:
   adminRelease:
     image: eu.gcr.io/os2display-kff/admin-release
-    tag: kk-master-3002
+    tag: kk-master-3007
   adminPhp:
     image: reload/os2display-admin-php
     tag: reload-2.3.0
@@ -41,6 +41,11 @@ os2display:
     publicUrl: "https://admin.kkos2display.dk"
     mailerFromEmail: "admin-prod@example.com"
     mailerFromName: "OS2Display prod Admin"
+    mailerHost: "smtp.sendgrid.net"
+    mailerPassword: "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
+"
+    mailerPort: "587"
+    mailerUser: "apikey"
 
   screen:
     publicDomain: "screen.kkos2display.dk"
@@ -52,7 +57,7 @@ os2display:
 
   adminDb:
     backup:
-      enabled: false
+      enabled: true
       # Type is currently not used as we only support google storage for now.
       destinationType: "GoogleStorage"
       # See tools/configure-db-backup.sh in reload/os2display-k8s

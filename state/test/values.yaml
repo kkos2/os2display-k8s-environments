@@ -2,7 +2,7 @@
 images:
   adminRelease:
     image: eu.gcr.io/os2display-kff/admin-release
-    tag: kk-master-3002
+    tag: feature_OSD-76-multisite-scraping-3012
   adminPhp:
     image: reload/os2display-admin-php
     tag: reload-2.3.0
@@ -41,13 +41,17 @@ os2display:
     publicUrl: "https://test.admin.kkos2display.dk"
     mailerFromEmail: "admin-test@example.com"
     mailerFromName: "OS2Display test Admin"
+    mailerHost: "smtp.sendgrid.net"
+    mailerPassword: "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"
+    mailerPort: "587"
+    mailerUser: "apikey"
 
   screen:
     publicDomain: "test.screen.kkos2display.dk"
     publicUrl: "https://test.screen.kkos2display.dk"
 
   search:
-    publicDomain: "test.search.kkos2display.dk"
+    publicDomain: "test.search.kkos2display.dk" 
     publicUrl: "https://test.search.kkos2display.dk"
 
   adminDb:
