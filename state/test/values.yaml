@@ -42,7 +42,7 @@ os2display:
     mailerFromEmail: "admin-test@example.com"
     mailerFromName: "OS2Display test Admin"
     mailerHost: "smtp.sendgrid.net"
-    mailerPassword: "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"
+    mailerPassword: "INSERT HERE"
     mailerPort: "587"
     mailerUser: "apikey"
 
